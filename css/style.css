@@ -513,7 +513,7 @@ footer .ingredients, footer .disclaimer {
 
   .product_section {
     background-image: url(../images/creamBadgesSmallScreen.png);
-    height: 200px; } }
+    height: 300px; } }
 @media only screen and (max-width: 768px) {
   button.btn {
     margin: 10px 0 40px; }
@@ -539,6 +539,9 @@ footer .ingredients, footer .disclaimer {
 
   .product_section {
     padding-top: 20px;
-    margin: 20px auto; } }
+    margin: 20px auto; }
+
+  .navbar-default .navbar-nav > li > a {
+    line-height: 1.2; } }
 
 /*# sourceMappingURL=style.css.map */
