@@ -364,10 +364,13 @@ nav {
     padding-left: 40px !important;
     font-weight: 300;
     color: #7daf63; }
-    nav a:hover {
+    nav a:hover, nav a:active, nav a:visited, nav a:focus {
       color: #b5d2a6; }
   nav ul:last-child {
     margin-right: 20px; }
+
+.navbar-toggle .icon-bar {
+  color: black !important; }
 
 header {
   position: relative; }
@@ -467,5 +470,34 @@ footer .ingredients, footer .disclaimer {
 
 .terms_content, .contact_content {
   padding: 20px; }
+
+@media only screen and (max-width: 500px) {
+  header .order-btn {
+    position: relative !important;
+    left: 2px;
+    top: 0;
+    text-align: center;
+    margin: 0; }
+  header .head_img {
+    top: 150px;
+    margin: 40px 0;
+    height: 800px; }
+  header .text_on_img, header .text_on_img2 {
+    padding: 100px 2px 0;
+    width: 100%;
+    font-size: .9em; }
+  header .text_on_img2 {
+    padding: 0 2px 50px;
+    width: 100%;
+    font-size: .9em; }
+
+  .main-content {
+    margin: -20px auto; }
+
+  button.btn {
+    margin: 10px 0 40px; } }
+@media only screen and (max-width: 768px) {
+  button.btn {
+    margin: 10px 0 40px; } }
 
 /*# sourceMappingURL=style.css.map */

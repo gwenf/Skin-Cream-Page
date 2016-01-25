@@ -29,7 +29,7 @@ nav{
       padding-left: 40px !important;
       font-weight: 300;
       color: $green;
-      &:hover {
+      &:hover, &:active, &:visited, &:focus {
         color: lighten($green, 20%);
       }
   }
@@ -37,6 +37,9 @@ nav{
     margin-right: 20px;
   }
   background-color: white;
+}
+.navbar-toggle .icon-bar {
+  color: black !important;
 }
 
 //header styles
@@ -158,4 +161,44 @@ footer {
 // other page styling
 .terms_content, .contact_content {
   padding: 20px;
+}
+
+
+//media-queries
+@media only screen and (max-width: 500px) {
+  header {
+    .order-btn {
+      position: relative !important;
+      left: 2px;
+      top: 0;
+      text-align: center;
+      margin: 0;
+    }
+    .head_img {
+      top: 150px;
+      margin: 40px 0;
+      height: 800px;
+    }
+    .text_on_img {
+      padding: 100px 2px 0;
+      width: 100%;
+      font-size: .9em;
+    }
+    .text_on_img2 {
+      padding: 0 2px 50px;
+      width: 100%;
+      font-size: .9em;
+    }
+  }
+  .main-content {
+    margin: -20px auto;
+  }
+  button.btn{
+    margin: 10px 0 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  button.btn {
+    margin: 10px 0 40px;
+  }
 }
